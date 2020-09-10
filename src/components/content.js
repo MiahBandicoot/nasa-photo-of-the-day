@@ -1,9 +1,13 @@
 import React from 'react'
+import styled from "styled-components"
+import {StyledContent} from "../styling/styles"
+
 
  const Content = props => {
 const {data} = props
+console.log(data)
 return (
-    <div className = 'dateOf'>
+    <StyledContent className = 'dateOf'>
        <h2>{data.date}</h2>
         <div className = 'nasaCaptures'>
             <img
@@ -17,7 +21,7 @@ return (
         <div className = 'descrip'>
             <p>{data.explanation}</p>
         </div>
-     </div>
+     </StyledContent>
 )
 }
 export default Content
